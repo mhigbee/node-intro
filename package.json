@@ -10,9 +10,20 @@
   "keywords": [
     "node.js"
   ],
-  "author": "",
+  "author": "Matt Higbee",
   "license": "ISC",
   "dependencies": {
-
-  }
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "lodash": "^4.13.1",
+    "morgan": "^1.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhigbee/node-intro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mhigbee/node-intro/issues"
+  },
+  "homepage": "https://github.com/mhigbee/node-intro#readme"
 }

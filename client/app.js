@@ -491,12 +491,17 @@ var makeTemplate = function(data) {
 }
 
 var updateuserList = function(){
+  console.log("I am updating user list");
+  console.log(users);
   var userData = users[users.length-1];
-  makeTemplate(userData);
+  console.log("user,Data",userData);
+  makeuserList(userData);
 }
 
-var makeuserList = function() {
-  users.forEach(function(user) {
+var makeuserList = function(usersitem) {
+  console.log(users);
+  usersitem.forEach(function(user) {
+    console.log(user);
     makeTemplate(user);
   });
 };
@@ -508,6 +513,7 @@ var getAllusers = function() {
       return resp.json();
     })
     .then(function(data) {
+      console.log("data from the getAllusers",data);
       users = users.concat(data);
       makeuserList();
     });
